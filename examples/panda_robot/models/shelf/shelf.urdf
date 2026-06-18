@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<robot name="shelf">
+    <link name="bottom_layer">
+        <visual>
+            <geometry>
+                <box size="0.9 0.4 0.03"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <geometry>
+                <box size="0.9 0.4 0.03"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <mass value="0.5"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.0001"/>
+        </inertial>
+
+        <contact>
+            <lateral_friction value="0.5"/>
+            <rolling_friction value="0.01"/>
+            <spinning_friction value="0.01"/>
+            <restitution value="0.2"/>
+        </contact>
+    </link>
+
+    <link name="left_outer">
+        <visual>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.9"/>
+            <geometry>
+                <box size="0.02 0.4 1.80"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.9"/>
+            <geometry>
+                <box size="0.02 0.4 1.80"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.9"/>
+            <mass value="0.5"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.0001"/>
+        </inertial>
+
+        <contact>
+            <lateral_friction value="0.5"/>
+            <rolling_friction value="0.01"/>
+            <spinning_friction value="0.01"/>
+            <restitution value="0.2"/>
+        </contact>
+    </link>
+
+    <link name="right_outer">
+        <visual>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.9"/>
+            <geometry>
+                <box size="0.02 0.4 1.80"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.9"/>
+            <geometry>
+                <box size="0.02 0.4 1.80"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.9"/>
+            <mass value="0.5"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.0001"/>
+        </inertial>
+
+        <contact>
+            <lateral_friction value="0.5"/>
+            <rolling_friction value="0.01"/>
+            <spinning_friction value="0.01"/>
+            <restitution value="0.2"/>
+        </contact>
+    </link>
+
+    <link name="top_layer">
+        <visual>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.9 0.4 0.03"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.9 0.4 0.03"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+            <mass value="0.5"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.0001"/>
+        </inertial>
+
+        <contact>
+            <lateral_friction value="0.5"/>
+            <rolling_friction value="0.01"/>
+            <spinning_friction value="0.01"/>
+            <restitution value="0.2"/>
+        </contact>
+    </link>
+
+    <link name="up_layer1">
+        <visual>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.9 0.4 0.03"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.9 0.4 0.03"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+            <mass value="0.5"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.0001"/>
+        </inertial>
+
+        <contact>
+            <lateral_friction value="0.5"/>
+            <rolling_friction value="0.01"/>
+            <spinning_friction value="0.01"/>
+            <restitution value="0.2"/>
+        </contact>
+    </link>
+
+    <link name="up_layer2">
+        <visual>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.9 0.4 0.03"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.9 0.4 0.03"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+            <mass value="0.5"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.0001"/>
+        </inertial>
+
+        <contact>
+            <lateral_friction value="0.5"/>
+            <rolling_friction value="0.01"/>
+            <spinning_friction value="0.01"/>
+            <restitution value="0.2"/>
+        </contact>
+    </link>
+
+    <link name="up_layer3">
+        <visual>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.9 0.4 0.03"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.9 0.4 0.03"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+            <mass value="0.5"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.0001"/>
+        </inertial>
+
+        <contact>
+            <lateral_friction value="0.5"/>
+            <rolling_friction value="0.01"/>
+            <spinning_friction value="0.01"/>
+            <restitution value="0.2"/>
+        </contact>
+    </link>
+
+    <joint name="bottom_left_outer" type="fixed">
+        <parent link="bottom_layer"/>
+        <child link="left_outer"/>
+        <origin xyz="-0.46 0.0 -0.01" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="bottom_right_outer" type="fixed">
+        <parent link="bottom_layer"/>
+        <child link="right_outer"/>
+        <origin xyz="0.46 0.0 -0.01" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="bottom_top_layer" type="fixed">
+        <parent link="bottom_layer"/>
+        <child link="top_layer"/>
+        <origin xyz="0.0 0.0 1.775" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="bottom_up_layer1" type="fixed">
+        <parent link="bottom_layer"/>
+        <child link="up_layer1"/>
+        <origin xyz="0.0 0.0 0.45" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="bottom_up_layer2" type="fixed">
+        <parent link="bottom_layer"/>
+        <child link="up_layer2"/>
+        <origin xyz="0.0 0.0 0.90" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="bottom_up_layer3" type="fixed">
+        <parent link="bottom_layer"/>
+        <child link="up_layer3"/>
+        <origin xyz="0.0 0.0 1.35" rpy="0 0 0"/>
+    </joint>
+
+</robot>

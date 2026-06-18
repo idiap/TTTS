@@ -1,0 +1,33 @@
+<mujoco model="bi_panda">
+    <include file="assets/basic_scene.xml"/>
+    <include file="assets/assets.xml"/>
+    <!-- <include file="assets/gripper_assets.xml"/> -->
+    <compiler meshdir=""/>
+
+    <default>
+        <default class='torso'>
+            <geom group='2' contype='0' conaffinity='0' rgba=".95 .99 .92 0.01"/>
+        </default>/
+    </default>
+
+    <worldbody>
+
+        <body name='torso' childclass='torso'>
+            <geom name='shoulder' type='box' contype='0' conaffinity='0' size='0.1 0.6 0.01'/>
+
+            <body name='leftarm' pos='0.717 -0.717 0.0' euler='0 0 0'>
+                <include file="chain0_real.xml"/>
+            </body>
+
+            <body name='rightarm' pos='0 0.0 0.0' euler='0 0 0'>
+                <include file="chain1_real.xml"/>
+            </body>
+
+        </body>
+
+    </worldbody>
+
+    <include file='assets/actuator0.xml'/>
+    <include file='assets/actuator1.xml'/>
+
+</mujoco>

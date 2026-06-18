@@ -1,0 +1,40 @@
+<robot name="cylinder_object">
+  <link name="cylinder">
+    <visual>
+      <geometry>
+        <cylinder radius="0.14" length="0.4"/>
+      </geometry>
+      <material name="wood">
+        <color rgba="0.85 0.72 0.45 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <cylinder radius="0.13" length="0.4"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="3"/>
+
+      <inertia 
+        ixx="0.01" ixy="0.0" ixz="0.0" 
+        iyy="0.01" iyz="0.0" 
+        izz="0.005"/>
+    </inertial>
+
+    <contact>
+      <lateral_friction value="1"/>
+      <rolling_friction value="0.05"/>
+      <spinning_friction value="0.05"/>
+      <restitution value="0.2"/>
+      <ode>
+        <kp>100</kp>
+        <kd>10000</kd>
+        <soft_cfm>0.0001</soft_cfm>
+        <soft_erp>0.9</soft_erp>
+      </ode>
+    </contact>
+  </link>
+</robot>

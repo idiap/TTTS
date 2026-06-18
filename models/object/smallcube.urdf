@@ -1,0 +1,43 @@
+<robot name="cube_object">
+  <link name="cube">
+    <visual>
+      <geometry>
+        <box size="0.4 0.24 0.26"/>
+      </geometry>
+      <material name="wood">
+        <color rgba="0.85 0.72 0.45 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.4 0.24 0.26"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <!-- Mass of the cube -->
+      <mass value="3"/>
+
+      <!-- Inertia tensor values for the cube -->
+      <inertia 
+        ixx="0.01" ixy="0.0" ixz="0.0" 
+        iyy="0.01" iyz="0.0" 
+        izz="0.01"/>
+    </inertial>
+
+    <contact>
+      <lateral_friction value="0.1"/>
+      <rolling_friction value="0.05"/>
+      <spinning_friction value="0.05"/>
+      <restitution value="0.2"/>
+      <ode>
+        <kp>100000000.0</kp>
+        <kd>10000</kd>
+        <soft_cfm>0.0001</soft_cfm>
+        <soft_erp>0.9</soft_erp>
+      </ode>
+    </contact>
+  </link>
+
+</robot>

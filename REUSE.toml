@@ -1,0 +1,37 @@
+version = 1
+
+[[annotations]]
+path = [
+    "README.md",
+    "requirements.txt",
+    ".gitignore",
+    "examples/3joint_motion_planning/**",
+    "examples/bi_panda_mani/data/**",
+    "examples/bi_panda_mani/tt_models/**",
+    "examples/bi_panda_mani/video/**",
+    "examples/panda_robot/*.ipynb",
+    "examples/panda_robot/*.pth",
+    "examples/panda_robot/*.npy",
+    "examples/panda_robot/tt_models/**",
+    "examples/planar_push/*.ipynb",
+    "examples/planar_push/*.pt",
+    "examples/planar_push/result/**",
+    "examples/toy_example/*.ipynb",
+    "examples/toy_example/*.pth",
+    "models/cube_base/**",
+    "models/object/**",
+    "models/shelf/**",
+    "examples/panda_robot/models/cube_base/**",
+    "examples/panda_robot/models/shelf/**",
+]
+SPDX-FileCopyrightText = "Copyright © 2026 Idiap Research Institute <contact@idiap.ch>"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = [
+    "models/franka_panda/**",
+    "models/franka_description/**",
+    "examples/panda_robot/models/franka_panda/**",
+]
+SPDX-FileCopyrightText = "Franka Emika GmbH"
+SPDX-License-Identifier = "Apache-2.0"

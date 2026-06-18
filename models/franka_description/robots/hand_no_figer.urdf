@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<robot name="hand" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link name="panda_hand">
+        <contact>
+          <lateral_friction value="1"/>
+          <rolling_friction value="1"/>
+          <spinning_friction value="1"/>
+
+          <inertia_scaling value="0.5"/>
+        </contact>
+        <inertial>
+          <origin rpy="0 0 0" xyz="0 0 0"/>
+           <mass value="3"/>
+           <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+        </inertial>
+        <visual>
+          <origin rpy="0 0 0" xyz="0 0 0"/>
+          <geometry>
+            <box size=".06 .18 .06"/>
+          </geometry>
+          <material name="blue">
+            <color rgba="125 120 120 0.1"/>
+          </material>
+        </visual>
+        <collision>
+          <origin rpy="0 0 0" xyz="0 0 0"/>
+          <geometry>
+            <box size=".06 .18 .06"/>
+          </geometry>
+        </collision>
+    </link>
+  <link name="tool_link"/>
+  <joint name="tool_joint" type="fixed">
+    <origin rpy="0 0 1.57079632679" xyz="0.0 0 0.1"/>
+    <axis xyz="0 0 1"/>
+    <parent link="panda_hand"/>
+    <child link="tool_link"/>
+  </joint>
+</robot>
